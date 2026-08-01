@@ -1,0 +1,18 @@
+import type { APIConfig } from '@/types/api';
+export const getUsers:             APIConfig = { endPoint:'/admin/users',                       keys:['users'],            method:'GET',    accessToken:true };
+export const getUserById:          APIConfig = { endPoint:'/admin/users/{id}',                  keys:['user-detail'],      method:'GET',    accessToken:true };
+export const postUser:             APIConfig = { endPoint:'/admin/users',                       keys:['user-create'],      method:'POST',   accessToken:true };
+export const putUser:              APIConfig = { endPoint:'/admin/users/{id}',                  keys:['user-update'],      method:'PUT',    accessToken:true };
+export const deleteUser:           APIConfig = { endPoint:'/admin/users/{id}',                  keys:['user-delete'],      method:'DELETE', accessToken:true };
+export const patchToggleUser:      APIConfig = { endPoint:'/admin/users/{id}/toggle',           keys:['user-toggle'],      method:'PATCH',  accessToken:true };
+export const getRoles:             APIConfig = { endPoint:'/admin/roles',                       keys:['roles'],            method:'GET',    accessToken:true };
+export const postRole:             APIConfig = { endPoint:'/admin/roles',                       keys:['role-create'],      method:'POST',   accessToken:true };
+export const putRole:              APIConfig = { endPoint:'/admin/roles/{id}',                  keys:['role-update'],      method:'PUT',    accessToken:true };
+export const deleteRole:           APIConfig = { endPoint:'/admin/roles/{id}',                  keys:['role-delete'],      method:'DELETE', accessToken:true };
+export const getAdminCompanies:    APIConfig = { endPoint:'/admin/companies',                   keys:['companies'],        method:'GET',    accessToken:true };
+export const postCompany:          APIConfig = { endPoint:'/admin/companies',                   keys:['company-create'],   method:'POST',   accessToken:true };
+export const putCompany:           APIConfig = { endPoint:'/admin/companies/{id}',              keys:['company-update'],   method:'PUT',    accessToken:true };
+export const getModules:           APIConfig = { endPoint:'/admin/modules',                     keys:['modules'],          method:'GET',    accessToken:true };
+export const getScreens:           APIConfig = { endPoint:'/admin/screens',                     keys:['screens'],          method:'GET',    accessToken:true };
+export const getRoleEntitlements:  APIConfig = { endPoint:'/admin/roles/{roleId}/entitlements', keys:['role-entitlements'],method:'GET',    accessToken:true };
+export const saveRoleEntitlements: APIConfig = { endPoint:'/admin/roles/{roleId}/entitlements', keys:['role-ent-save'],    method:'POST',   accessToken:true };

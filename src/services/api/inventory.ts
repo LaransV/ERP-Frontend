@@ -1,0 +1,10 @@
+import type { APIConfig } from '@/types/api';
+export const getInvDash:        APIConfig = { endPoint:'/inventory/dashboard',              keys:['inv-dash'],    method:'GET',    accessToken:true };
+export const getStock:          APIConfig = { endPoint:'/inventory/stock',                  keys:['stock'],       method:'GET',    accessToken:true };
+export const getMovements:      APIConfig = { endPoint:'/inventory/movements',              keys:['movements'],   method:'GET',    accessToken:true };
+export const getPurchaseOrders: APIConfig = { endPoint:'/inventory/purchase-orders',        keys:['pos'],         method:'GET',    accessToken:true };
+export const getPOById:         APIConfig = { endPoint:'/inventory/purchase-orders/{id}',   keys:['po-detail'],   method:'GET',    accessToken:true };
+export const postPO:            APIConfig = { endPoint:'/inventory/purchase-orders',        keys:['po-create'],   method:'POST',   accessToken:true };
+export const putPO:             APIConfig = { endPoint:'/inventory/purchase-orders/{id}',   keys:['po-update'],   method:'PUT',    accessToken:true };
+export const patchApprovePO:    APIConfig = { endPoint:'/inventory/purchase-orders/{id}/approve',keys:['po-approve'],method:'PATCH',accessToken:true };
+export const deletePO:          APIConfig = { endPoint:'/inventory/purchase-orders/{id}',   keys:['po-delete'],   method:'DELETE', accessToken:true };

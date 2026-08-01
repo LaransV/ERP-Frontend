@@ -1,0 +1,17 @@
+import type { APIConfig } from '@/types/api';
+export const getCRMDash:          APIConfig = { endPoint:'/crm/dashboard',           keys:['crm-dash'],       method:'GET',    accessToken:true };
+export const getLeads:            APIConfig = { endPoint:'/crm/leads',               keys:['leads'],          method:'GET',    accessToken:true };
+export const getLeadById:         APIConfig = { endPoint:'/crm/leads/{id}',          keys:['lead-detail'],    method:'GET',    accessToken:true };
+export const postLead:            APIConfig = { endPoint:'/crm/leads',               keys:['lead-create'],    method:'POST',   accessToken:true };
+export const putLead:             APIConfig = { endPoint:'/crm/leads/{id}',          keys:['lead-update'],    method:'PUT',    accessToken:true };
+export const patchLeadStatus:     APIConfig = { endPoint:'/crm/leads/{id}/status',   keys:['lead-status'],    method:'PATCH',  accessToken:true };
+export const deleteLead:          APIConfig = { endPoint:'/crm/leads/{id}',          keys:['lead-delete'],    method:'DELETE', accessToken:true };
+export const getFollowups:        APIConfig = { endPoint:'/crm/followups',           keys:['followups'],      method:'GET',    accessToken:true };
+export const postFollowup:        APIConfig = { endPoint:'/crm/followups',           keys:['followup-create'],method:'POST',   accessToken:true };
+export const putFollowup:         APIConfig = { endPoint:'/crm/followups/{id}',      keys:['followup-update'],method:'PUT',    accessToken:true };
+export const patchCompleteFollowup:APIConfig={ endPoint:'/crm/followups/{id}/complete',keys:['followup-done'],method:'PATCH',  accessToken:true };
+export const deleteFollowup:      APIConfig = { endPoint:'/crm/followups/{id}',      keys:['followup-delete'],method:'DELETE', accessToken:true };
+export const getActivities:       APIConfig = { endPoint:'/crm/activities',          keys:['activities'],     method:'GET',    accessToken:true };
+export const postActivity:        APIConfig = { endPoint:'/crm/activities',          keys:['act-create'],     method:'POST',   accessToken:true };
+export const putActivity:         APIConfig = { endPoint:'/crm/activities/{id}',     keys:['act-update'],     method:'PUT',    accessToken:true };
+export const deleteActivity:      APIConfig = { endPoint:'/crm/activities/{id}',     keys:['act-delete'],     method:'DELETE', accessToken:true };

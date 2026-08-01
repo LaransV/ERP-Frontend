@@ -1,0 +1,16 @@
+import type { APIConfig } from '@/types/api';
+export const getHRDash:         APIConfig = { endPoint:'/hr/dashboard',              keys:['hr-dash'],          method:'GET',    accessToken:true };
+export const getEmployees:      APIConfig = { endPoint:'/hr/employees',              keys:['employees'],         method:'GET',    accessToken:true };
+export const getEmployeeById:   APIConfig = { endPoint:'/hr/employees/{id}',         keys:['employee-detail'],  method:'GET',    accessToken:true };
+export const postEmployee:      APIConfig = { endPoint:'/hr/employees',              keys:['employee-create'],  method:'POST',   accessToken:true };
+export const putEmployee:       APIConfig = { endPoint:'/hr/employees/{id}',         keys:['employee-update'],  method:'PUT',    accessToken:true };
+export const deleteEmployee:    APIConfig = { endPoint:'/hr/employees/{id}',         keys:['employee-delete'],  method:'DELETE', accessToken:true };
+export const getDepartments:    APIConfig = { endPoint:'/hr/departments',            keys:['departments'],       method:'GET',    accessToken:true };
+export const getDesignations:   APIConfig = { endPoint:'/hr/designations',           keys:['designations'],     method:'GET',    accessToken:true };
+export const getAttendance:     APIConfig = { endPoint:'/hr/attendance',             keys:['attendance'],       method:'GET',    accessToken:true };
+export const postAttendance:    APIConfig = { endPoint:'/hr/attendance',             keys:['att-create'],       method:'POST',   accessToken:true };
+export const putAttendance:     APIConfig = { endPoint:'/hr/attendance/{id}',        keys:['att-update'],       method:'PUT',    accessToken:true };
+export const deleteAttendance:  APIConfig = { endPoint:'/hr/attendance/{id}',        keys:['att-delete'],       method:'DELETE', accessToken:true };
+export const getPayroll:        APIConfig = { endPoint:'/hr/payroll',                keys:['payroll'],          method:'GET',    accessToken:true };
+export const postProcessPayroll:APIConfig = { endPoint:'/hr/payroll/process',         keys:['payroll-process'],  method:'POST',   accessToken:true };
+export const patchPayrollPaid:  APIConfig = { endPoint:'/hr/payroll/{id}/paid',       keys:['payroll-paid'],     method:'PATCH',  accessToken:true };
