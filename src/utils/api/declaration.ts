@@ -3,8 +3,8 @@ import type { APIConfig } from '@/types/api';
 import type { EndPointParameter } from '@/utils/apiEndpointParser';
 
 export type TBaseResponse = {
-  success: boolean; message?: string; statusCode?: number;
-  data?: unknown; errors?: string[];
+  success: boolean; message?: string | null; statusCode?: number | null;
+  data?: unknown; errors?: string[] | null;
 };
 
 export type FetchProps<Req extends ZodTypeAny, Res extends ZodType<TBaseResponse>> = {
