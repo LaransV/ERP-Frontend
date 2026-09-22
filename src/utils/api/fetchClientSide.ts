@@ -7,7 +7,7 @@ const AUTH_FAIL = [401, 403];
  
 export const axiosClient = axios.create({
   baseURL: (process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8080') + '/api',
-  timeout: 30000,
+  timeout: 120000,
   headers: { 'Content-Type': 'application/json' },
   withCredentials: true,
 });
